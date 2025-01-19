@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "infrared")(type "KiCad")(uri "${KIPRJMOD}/infrared.kicad_sym")(options "")(descr ""))
+)
