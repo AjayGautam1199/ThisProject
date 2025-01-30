@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESP32 Camera Stream</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+      text-align: center;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    #container {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 10px;
+      background: #1e1e1e;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    #video {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    #status {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #ff4081;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e91e63;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h2>ESP32 Camera Stream</h2>
+    <p id="status">Connecting...</p>
+    <img id="video" src="" alt="Video Stream">
+    <button onclick="toggleFullScreen()">Fullscreen</button>
+  </div>
+  
+  <script>
+    const img = document.getElementById('video');
+    const status = document.getElementById('status');
+    const ws = new WebSocket('ws://192.168.50.92');
+
+    ws.binaryType = 'arraybuffer';
+    
+    ws.onopen = function() {
+      status.textContent = "Connected";
+      status.style.color = "#4caf50";
+    };
+
+    ws.onmessage = function(event) {
+      const blob = new Blob([event.data], { type: 'image/jpeg' });
+      const url = URL.createObjectURL(blob);
+      img.src = url;
+    };
+
+    ws.onerror = function() {
+      status.textContent = "Error: Connection Failed";
+      status.style.color = "#ff5722";
+    };
+
+    ws.onclose = function() {
+      status.textContent = "Disconnected";
+      status.style.color = "#ff5722";
+    };
+
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        img.requestFullscreen().catch(err => console.log(err));
+      } else {
+        document.exitFullscreen();
+      }
+    }
+  </script>
+</body>
+</html>
