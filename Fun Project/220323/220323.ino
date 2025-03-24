@@ -6,7 +6,7 @@
 #include "FirebaseStorege.h"
 
 #define FIREBASE_HOST "womansecuritydev.appspot.com"
-#define FIREBASE_AUTH "AIzaSyDaE1VhPmbiNY0FQEih9U-W7sbo-6uykIA"
+#define FIREBASE_AUTH "abcdc"
 #define BUTTON_PIN 4
 
 // WiFi credentials
