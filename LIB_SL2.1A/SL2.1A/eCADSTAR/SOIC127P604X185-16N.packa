@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "SL2_1A"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-11-22-09:35:36)
+    (mountForm default
+        (footprintRef "SOIC127P604X185-16N")
+        (spec "System")
+    )
+)

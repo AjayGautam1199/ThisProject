@@ -1,0 +1,18 @@
+.SL2.1A :1 ;USB 2.0 HIGH SPEED 4-PORT HUB CONTROLLER
+SOIC127P604X185-16N
+*STM IC
+*NGS
+*PLB 1="DM4" 2="DP4" 3="DM3" 4="DP3" 5="DM2" 6="DP2" 7="DM1" 8="DP1" 9="DM" 10="DP" 11="VDD5" 12="GND" 13="VDD33" 14="VDD18" 15="XOUT" 16="XIN"
+*MXP 16
+*DFN SL2.1A
+~!Manufacturer_Name (CoreChips ShenZhen CO.,Ltd)
+~!Manufacturer_Part_Number (SL2.1A)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://datasheet.lcsc.com/szlcsc/1811151645_CoreChips-SL2-1A_C192893.pdf)
+~!Height (1.85mm)
+~!3D_Model (SL2.1A)
+SL2.1A
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 16.1!U 15.1!U 14.1!U 13.1!U 12.1!U 11.1!U 10.1!U 9.1!U 

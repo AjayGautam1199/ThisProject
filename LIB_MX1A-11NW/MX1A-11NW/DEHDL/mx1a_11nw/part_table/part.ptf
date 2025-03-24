@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MX1A_11NW'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Cherry", "MX1A-11NW" (!) = "", "MX1A11NW", "Other", "540-MX1A-11NW", "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-11NW?qs=5iusCjFLgR7487Rvpe7dvw%3D%3D", "MX1A-11NW", "https://www.arrow.com/en/products/mx1a-11nw/cherry-americas-llc?region=nac", "CHERRY - MX1A-11NW - Tactile Switch, MX Series, Top Actuated, Surface Mount, Plunger for Cap, 59.5 gf, 10mA at 12VDC", "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf", "15.2 mm"
+END_PART
+
+END.

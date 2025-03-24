@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'SL2.1A'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "CoreChips ShenZhen CO.,Ltd", "SL2.1A" (!) = "", "SOIC127P604X185-16N", "Small Outline Packages", "", "", "", "", "USB 2.0 HIGH SPEED 4-PORT HUB CONTROLLER", "https://datasheet.lcsc.com/szlcsc/1811151645_CoreChips-SL2-1A_C192893.pdf", "1.85 mm"
+END_PART
+
+END.

@@ -1,0 +1,133 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "MX1A-11NW"
+   (description "CHERRY - MX1A-11NW - Tactile Switch, MX Series, Top Actuated, Surface Mount, Plunger for Cap, 59.5 gf, 10mA at 12VDC")
+   (family "SWI")
+   (package "MX1A11NW")
+   (attribute "Datasheet Link" "https://media.digikey.com/pdf/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf")
+   (attribute "Geometry.Height" "15.2mm")
+   (attribute "Manufacturer_Name" "Cherry")
+   (attribute "Manufacturer_Part_Number" "MX1A-11NW")
+   (attribute "Mouser Part Number" "540-MX1A-11NW")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-11NW?qs=5iusCjFLgR7487Rvpe7dvw%3D%3D")
+   (attribute "Arrow Part Number" "MX1A-11NW")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/mx1a-11nw/cherry-americas-llc?region=nac")
+   (gate
+    (symbol "MX1A-11NW")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+    (pin "MH1" MH1 PS)
+    (pin "MH2" MH2 PS)
+   )
+  )
+  (symbol "MX1A-11NW"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 700 100) (pt 700 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "MX1A11NW"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -3.99 5.26)
+      (pt 11.61 5.26)
+      (pt 11.61 -10.34)
+      (pt -3.99 -10.34)
+      (pt -3.99 5.26))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.99 5.26)
+      (pt 11.61 5.26)
+      (pt 11.61 -10.34)
+      (pt -3.99 -10.34)
+      (pt -3.99 5.26))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -4.99 6.26)
+      (pt 12.61 6.26)
+      (pt 12.61 -11.34)
+      (pt -4.99 -11.34)
+      (pt -4.99 6.26))))
+   (leg 1 (pt 0.000 0.000) (padstack 0))
+   (leg 2 (pt 6.350 2.540) (padstack 0))
+   (leg MH1 (pt -1.270 -2.540) (padstack 3))
+   (leg MH2 (pt 8.890 -2.540) (padstack 4))
+   (leg MH3 (pt 3.810 -2.540) (padstack 5))
+   (padstack 0
+    (hole 1.4986)
+    (plated true)
+    (pad (layer TCOP) (round 2.248))
+    (pad (layer INNER) (round 2.248))
+    (pad (layer BCOP) (round 2.248))
+   )
+   (padstack 3
+    (hole 1.7018)
+    (plated true)
+    (pad (layer TCOP) (round 2.553))
+    (pad (layer INNER) (round 2.553))
+    (pad (layer BCOP) (round 2.553))
+   )
+   (padstack 4
+    (hole 1.7018)
+    (plated true)
+    (pad (layer TCOP) (round 2.553))
+    (pad (layer INNER) (round 2.553))
+    (pad (layer BCOP) (round 2.553))
+   )
+   (padstack 5
+    (hole 3.9878)
+    (plated false)
+    (pad (layer TCOP) (round 1.994))
+    (pad (layer INNER) (round 1.994))
+    (pad (layer BCOP) (round 1.994))
+   )
+   (model "MX1A-11NW.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)
